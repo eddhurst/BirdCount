@@ -1,8 +1,8 @@
 {
   "name": "birdcount",
   "version": "0.1.0",
-  "private": true,
-  "license": "UNLICENSED",
+  "license": "GNU GPLv3 or later (see LICENSE.md)",
+  "author": "Edd Hurst <edd@eddhurst.co.uk>",
   "devDependencies": {
     "@fitbit/sdk": "~4.2.0",
     "@fitbit/sdk-cli": "^1.7.3"
