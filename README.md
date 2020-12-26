@@ -22,3 +22,7 @@ Runs on Fitbit SDK 4.2, so should run on the following devices.
 - Versa
 - Versa Light
 - Versa 2
+
+## Attributions
+
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
