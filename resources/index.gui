@@ -1,0 +1,19 @@
+<svg>
+  <text id="countShown"
+        x="50%" y="40%"
+        font-size="72"
+        font-family="System-Bold"
+        text-anchor="middle"
+        fill="fb-white"
+        text-length="8"
+        text-buffer="0"
+        pointer-events="visible" />
+  
+  <use id="btnIncrement" href="#text-button" x="50%" y="60%" fill="fb-slate" width="50%" height="40%" pointer-events="visible">
+    <set href="#text" attributeName="text-buffer" to="+1" />
+  </use>
+  
+  <use id="btnSubtract" href="#text-button" x="0%" y="60%" fill="fb-slate-press" width="50%" height="40%" pointer-events="visible">
+    <set href="#text" attributeName="text-buffer" to="-1" />
+  </use>
+</svg>

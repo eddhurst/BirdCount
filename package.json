@@ -1,0 +1,31 @@
+{
+  "name": "birdcount",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~4.2.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "426d7923-7d5b-439d-8df0-6df1c9d3ffd4",
+    "appType": "app",
+    "appDisplayName": "Bird Count",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#00bcd4",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Bird Count"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}

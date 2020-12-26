@@ -1,0 +1,6 @@
+<svg>
+  <defs>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="import" href="text-button.gui" />
+  </defs>
+</svg>
