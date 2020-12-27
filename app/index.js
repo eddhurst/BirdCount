@@ -1,27 +1,22 @@
 import { vibration } from 'haptics';
-import document from 'document';
+import * as ui from './ui';
 import { BUTTON_PUSH_INCREMENT, BUTTON_PUSH_DECREMENT } from '../contants/vibration';
+import {
+  getCurrentCount, updateCount, INCREMENT_COUNT, DECREMENT_COUNT,
+} from './count';
 
-let count = 0;
-const countShown = document.getElementById('countShown');
-
-const renderCount = (number) => { countShown.text = number; };
-
-const onIncrement = () => {
-  vibration.stop();
-  count += 1;
-  renderCount(count);
+const onIncrementCount = () => {
+  const count = updateCount(INCREMENT_COUNT);
   vibration.start(BUTTON_PUSH_INCREMENT);
+  ui.renderCount(count);
 };
 
-const onSubtract = () => {
-  count -= 1;
-  renderCount(count);
+const onSubtractCount = () => {
+  const count = updateCount(DECREMENT_COUNT);
   vibration.start(BUTTON_PUSH_DECREMENT);
+  ui.renderCount(count);
 };
 
-const btnIncrement = document.getElementById('btnIncrement');
-const btnSubtract = document.getElementById('btnSubtract');
-
-btnIncrement.addEventListener('click', onIncrement);
-btnSubtract.addEventListener('click', onSubtract);
+ui.btnIncrementCallback(onIncrementCount);
+ui.btnDecrementCallback(onSubtractCount);
+ui.renderCount(getCurrentCount());
