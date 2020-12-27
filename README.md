@@ -2,10 +2,10 @@
 
 An app for tracking the count of bird sightings for Fitbit OS watches.
 
-|Screenshot| Device |
-|:-:|:-:|
-|![Screenshot from Fitbit Ionic](Screenshot-348x250.png)| Fitbit Ionic |
-|![Screenshot from Fitbit Versa](Screenshot-300x300.png)|Fitbit Versa|
+|                         Screenshot                     |    Device    |
+|:------------------------------------------------------:|:------------:|
+|![Screenshot from Fitbit Ionic](Screenshot-348x250.png) | Fitbit Ionic |
+|![Screenshot from Fitbit Versa](Screenshot-300x300.png) | Fitbit Versa |
 
 ## Installation
 
@@ -27,6 +27,13 @@ BirdCount has been developed for use with Fitbit SDK 4.2, and is compatible with
 - Versa
 - Versa Light
 - Versa 2
+
+## Changelog
+
+| Version  | Details                                                                |
+|:---------|:-----------------------------------------------------------------------|
+| 0.2.0    | Save current count to filesystem to allow persisting between app loads |
+| 0.1.0    | Add incremenet / decrement buttons                                     |
 
 ## Attributions
 

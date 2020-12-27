@@ -1,6 +1,6 @@
 {
   "name": "birdcount",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "GNU GPLv3 or later (see LICENSE.md)",
   "author": "Edd Hurst <edd@eddhurst.co.uk>",
   "devDependencies": {
