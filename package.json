@@ -5,7 +5,10 @@
   "author": "Edd Hurst <edd@eddhurst.co.uk>",
   "devDependencies": {
     "@fitbit/sdk": "~4.2.0",
-    "@fitbit/sdk-cli": "^1.7.3"
+    "@fitbit/sdk-cli": "^1.7.3",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
   },
   "fitbit": {
     "appUUID": "426d7923-7d5b-439d-8df0-6df1c9d3ffd4",

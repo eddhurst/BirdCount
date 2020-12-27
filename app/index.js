@@ -1,31 +1,27 @@
-import { vibration } from "haptics";
-import document from "document";
-
-const VIBRATION_TYPE = {
-  INCREMENT: "confirmation",
-  SUBTRACT: "confirmation"
-}
-
-let btnIncrement = document.getElementById("btnIncrement");
-let btnSubtract = document.getElementById("btnSubtract");
-let countShown = document.getElementById("countShown");
+import { vibration } from 'haptics';
+import document from 'document';
+import { BUTTON_PUSH_INCREMENT, BUTTON_PUSH_DECREMENT } from '../contants/vibration';
 
 let count = 0;
+const countShown = document.getElementById('countShown');
 
-let renderCount = (number) => countShown.text = number;
+const renderCount = (number) => { countShown.text = number; };
 
-let onIncrement = (event) => {
-  vibration.stop()
-  count = count + 1;
+const onIncrement = () => {
+  vibration.stop();
+  count += 1;
   renderCount(count);
-  vibration.start(VIBRATION_TYPE.INCREMENT);
-}
+  vibration.start(BUTTON_PUSH_INCREMENT);
+};
 
-let onSubtract = (event) => {
-  count = count - 1;
-  renderCount(count); 
-  vibration.start(VIBRATION_TYPE.SUBTRACT)
-}
+const onSubtract = () => {
+  count -= 1;
+  renderCount(count);
+  vibration.start(BUTTON_PUSH_DECREMENT);
+};
 
-btnIncrement.addEventListener("click", onIncrement);
-btnSubtract.addEventListener("click", onSubtract);
+const btnIncrement = document.getElementById('btnIncrement');
+const btnSubtract = document.getElementById('btnSubtract');
+
+btnIncrement.addEventListener('click', onIncrement);
+btnSubtract.addEventListener('click', onSubtract);
