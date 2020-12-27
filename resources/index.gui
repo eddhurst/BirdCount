@@ -1,13 +1,28 @@
 <svg>
-  <text id="countShown" x="50%" y="40%" font-size="72" font-family="System-Bold" text-anchor="middle" fill="fb-white"
+  <svg id="btnSpecies" x="0" y="0" width="92" height="30%" pointer-events="visible">
+    <image x="5" y="2" width="48" height="48" href="icon.png" />
+    <text id="labelSpecies" x="5" y="68" font-size="18" font-family="System-Regular" fill="fb-white"
+      text-buffer="Species" />
+  </svg>
+
+  <svg id="btnReset" x="0" y="37%" width="92" height="30%" pointer-events="visible">
+    <image x="12" y="0" width="48" height="48" href="delete.png" />
+    <text id="labelSpecies" x="36" y="68" font-size="18" font-family="System-Regular" fill="fb-white"
+      text-buffer="Reset" text-anchor="middle" />
+  </svg>
+
+  <text id="dayOfCount" x="60%" y="20%" font-size="28" font-family="System-Regular" text-anchor="middle" fill="fb-white"
+    text-buffer="Seen Today" />
+
+  <text id="countShown" x="60%" y="50%" font-size="72" font-family="System-Bold" text-anchor="middle" fill="fb-white"
     text-length="8" text-buffer="0" pointer-events="visible" />
 
-  <use id="btnIncrement" href="#text-button" x="50%" y="60%" fill="fb-slate" width="50%" height="40%"
+  <use id="btnIncrement" href="#text-button" x="50%" y="70%" fill="fb-slate" width="50%" height="30%"
     pointer-events="visible">
     <set href="#text" attributeName="text-buffer" to="+1" />
   </use>
 
-  <use id="btnSubtract" href="#text-button" x="0%" y="60%" fill="fb-slate-press" width="50%" height="40%"
+  <use id="btnSubtract" href="#text-button" x="0%" y="70%" fill="fb-slate-press" width="50%" height="30%"
     pointer-events="visible">
     <set href="#text" attributeName="text-buffer" to="-1" />
   </use>

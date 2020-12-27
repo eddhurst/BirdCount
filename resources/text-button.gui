@@ -2,7 +2,7 @@
   <defs>
     <symbol id="text-button">
       <rect id="button" width="100%" height="100%" fill="inherit" />
-      <text id="text" x="50%" y="65%" font-size="50" font-family="System-Regular" text-anchor="middle" fill="fb-white"
+      <text id="text" x="50%" y="65%" font-size="36" font-family="System-Regular" text-anchor="middle" fill="fb-white"
         text-buffer="Button Text" />
     </symbol>
   </defs>

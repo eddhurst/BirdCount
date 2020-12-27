@@ -32,9 +32,10 @@ BirdCount has been developed for use with Fitbit SDK 4.2, and is compatible with
 
 | Version  | Details                                                                |
 |:---------|:-----------------------------------------------------------------------|
+| 0.3.0    | Allow deleting of current count data and resetting to 0                |
 | 0.2.0    | Save current count to filesystem to allow persisting between app loads |
 | 0.1.0    | Add incremenet / decrement buttons                                     |
 
 ## Attributions
 
-Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Bird Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, Trash Icon made by <a href="https://www.flaticon.com/authors/pixelmeetup" title="Pixelmeetup">Pixelmeetup</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>

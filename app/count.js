@@ -3,6 +3,7 @@ import { COUNT_ABS_PATH, COUNT_PATH, COUNT_FILETYPE } from '../contants/count';
 
 export const INCREMENT_COUNT = 'BIRDCOUNT/INCREMENT_COUNT';
 export const DECREMENT_COUNT = 'BIRDCOUNT/DECREMENT_COUNT';
+export const RESET_COUNT = 'BIRDCOUNT/RESET_COUNT';
 
 const calculateNewCount = (state = 0, action = 'UNKNOWN_ACTION') => {
   switch (action) {
@@ -10,6 +11,8 @@ const calculateNewCount = (state = 0, action = 'UNKNOWN_ACTION') => {
       return state + 1;
     case DECREMENT_COUNT:
       return state - 1;
+    case RESET_COUNT:
+      return 0;
     default:
       return state;
   }
